@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Free HTML/CSS Template: DzDivs
+title: Free HTML CSS Template&#58; DzDivs
 ---
 
 DzDivs is now availble for free download!
