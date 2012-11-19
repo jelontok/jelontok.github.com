@@ -1,0 +1,30 @@
+---
+layout: default
+title: Contact
+---
+
+<div class="content">
+  
+    <h1 class="title-border">Contact</h1>
+    <p>Got something in mind?</p>
+    <form action="http://getsimpleform.com/messages?form_api_token=61e57bf277757411c831eba0877e9d40" method="post" id="contact-form">
+        <p>Please use the form below to submit your inquiry.</p>          
+        <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+        <input type='hidden' name='redirect_to' value='http://localhost:4000' />        
+        <!-- all your input fields here.... -->
+        <p>
+            <label>Name:</label><br />
+            <input type='text' name='name' class="txt" />
+        </p>
+        <p>
+            <label>Email:</label><br />
+            <input type='text' name='email' class="txt" />
+        </p>
+        <p>
+            <label>Message:</label><br />
+            <textarea rows="5" cols="40" name="message" class="txt"></textarea>
+        </p>
+        <input type='submit' value='Send' />
+    </form>
+  
+</div><!-- // end .content -->

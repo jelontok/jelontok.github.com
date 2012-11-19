@@ -203,6 +203,20 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,su
     text-decoration: underline;
 }
 
+/* contact */
+#contact-form * {
+    vertical-align: top;
+}
+
+#contact-form .txt {
+    width: 300px;
+}
+
+#contact-form label{
+    display: inline-block;
+    width: 80px;
+}
+
 .wrap {width: 770px; margin: auto;}
 .pad {padding: 30px 50px}
 .left {float: left}
