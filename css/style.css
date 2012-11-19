@@ -1,0 +1,27 @@
+/* reset */
+* { margin: 0; padding: 0;}
+
+/* global */
+body { font-size: 100%; font-family: sans-serif; color: #999; border-top: 4px #000 solid; }
+h1, h2, h3, h4, h5, h6, p, ul, ol, table { margin-bottom: 20px; line-height: normal; vertical-align: top; }
+h1 { color: #000; }
+p { font-size: 0.8em; }
+ul, ol { margin-left: 40px;}
+li ul, li ol { margin-bottom: 0; }
+strong { font-weight: bold; }
+em { font-style: italic; }
+a {color: #000}
+.clear { clear: both; }
+.left { float: left }
+.right { float: right }
+
+/* layout */
+#container { padding: 20px; margin: auto; width: 800px; }
+#sidebar { width: 220px; margin-right: 20px; position: fixed; }
+#main { width: 500px; margin-left: 240px; }
+
+/* typography */
+#sidebar { font-size: 0.5em; line-height: 2em }
+
+
+.posts { margin-left: 0; margin-bottom: 20px; list-style: none; }

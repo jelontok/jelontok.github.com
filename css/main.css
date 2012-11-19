@@ -1,0 +1,233 @@
+/*
+Theme Name: DZ WP
+Theme URI: http://www.jelontok.com
+Author: Jose Erlino M. Lontok
+Author URI: http://www.jelontok.com
+Description: 2012 for theme for JELONTOK.COM
+Version: 0.5
+*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #eee;
+    font-size: 100%;
+    color: #666;
+}
+
+/* Declaring HTML5 elements */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{ display: block; }
+
+
+/* Layout */
+#header {
+    height:60px;
+    background-color: #000;
+    background-image: url(../images/hexabump.png);
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px #ccc solid;
+    z-index: 999;
+}
+
+#header h1 {
+    margin: 0;
+    padding: 0;
+    color: #eee;
+    line-height: 60px;
+    /*font-family: 'BebasNeueRegular', sans-serif;*/    
+    font-family: 'Lobster', cursive;
+    font-family: 'Cabin', sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+#header h1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#header #nav ul {
+    margin: 0;
+    padding: 0;
+    line-height: 60px;
+}
+
+#header #nav ul li  {
+    display: inline;
+    margin-left: 20px;
+    float: left;
+    position: relative;
+}
+
+#header #nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#header #nav ul li ul  {
+    position: absolute;
+    line-height: normal;
+    display: none;
+    background-color: #000;
+    width: 180px;
+    padding: 10px;
+    border: 1px #ccc solid;
+    border-top: none;
+    left: -10px;
+    top: 60px;
+}
+
+#header #nav ul li ul li {
+    display: block;
+    float: none;
+    margin: 5px 0;
+}
+
+#header #nav li:hover ul {
+    display: block;
+}
+
+#featured-spot {
+    /*height: 400px;*/
+    padding-bottom: 125px;
+    margin-bottom: -105px;    
+    background-color: #333;
+    background-image: url(../images/random_grey_variations.png);
+}
+
+#featured-spot .wrap {
+    padding-top: 100px;
+    color: #fff;
+}
+
+#featured-spot .wrap h1 {
+    margin: 0 0 15px 0;    
+    font-size: 26px;
+    font-weight: normal;
+    font-family: 'Cabin', sans-serif;    
+    text-shadow: -2px -1px 4px rgba(150, 150, 150, 1);
+    text-align: center;
+}
+
+
+#main {
+    background-color: #fff;
+    -webkit-border-top-left-radius: 30px;
+    -webkit-border-top-right-radius: 30px;
+    -moz-border-radius-topleft: 30px;
+    -moz-border-radius-topright: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    /*margin-top: -105px;*/
+    position: relative;
+    min-height: 500px;
+}
+
+#main h1 {
+    color: #000;
+}
+
+#main p {
+    text-align: justify;
+}
+
+#main a {
+    color: #000;
+    padding-bottom: 2px;
+    text-decoration: none;
+}
+
+#main a:hover { text-decoration: underline; }
+
+#main .columns .column {
+    width: 45%;
+    font-size: 12px;
+}
+
+#main .entry h2 a { color: #000; }
+#main .entry h2 a:hover { color: #0099ff; }
+#main .entry p {line-height: 24px; }
+#main .entry .date { font-size: 11px; }
+
+#main .single-post-pager {padding: 50px 0;}
+
+#sidebar {
+    width: 220px;
+    position: absolute;
+    right: -235px;
+    top: 125px;
+}
+
+.widget ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.widget ul li {
+    border-bottom: 1px #ccc solid;
+    padding: 5px 0;
+    position: relative;
+}
+
+.widget ul li .info {
+    position: absolute;
+    right: 0;
+    font-size: 0.5em
+}
+
+#footer {
+    height: 50px;
+    background-color: #000;
+    background-image: url(../images/hexabump.png);
+}
+
+#footer p {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    font-size: 11px;
+}
+
+#footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+.wrap {width: 770px; margin: auto;}
+.pad {padding: 30px 50px}
+.left {float: left}
+.right {float: right}
+.txt-center {text-align: center;}
+.title-border {border-bottom: 3px #666 solid; padding-bottom: 15px;}
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: "."; clear: both; height: 0; }
+.clear { clear: both; }
+.divider {padding: 0 5px;}
+
+@media (max-width: 760px) {
+    .wrap {width: 98%;}
+    #header h1 {width: 40px; height: 40px; text-indent: -9999px; background-color: #fff; margin-top: 10px; margin-left: 5px; background-image: url(../images/h1-image.jpg);}
+    #header #nav {float: none}
+    #featured-spot {margin-bottom: 0; padding-bottom: 20px;}
+    #main {/*margin-top: 0;*/ border-radius: 0;}
+    #main .entry img {width: 100%;}
+    .columns .column {float: none !important; width: 100% !important;}
+    textarea#comment {width: 100%;}
+    .entry input, .entry textarea {width: 100%;}
+}
+
+@media (max-width: 1250px) {
+    #sidebar {display: none;}
+}
+
+.cycloneslider-caption{
+    background: url(http://www.jelontok.com/wp-content/plugins/cyclone-slider/templates/black/images/bg-caption.png) !important;
+}

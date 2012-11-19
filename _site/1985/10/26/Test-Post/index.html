@@ -1,24 +1,83 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 
 <html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="author" content="Your Name" />
+<head>
     <title>Test Post</title>
-  </head>
-  <body>
-    <header>
-      <h1><a href="/">Test Post</a></h1>
-    </header>
-    <section>
-      <div class="content">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>    
+    <link rel="stylesheet" href="/css/main.css" type="text/css" />
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script type="text/javascript">
+        window.alert("Hello! Do yourself a favor and use a different web browser. \nSite will still work but will be missing some features..");
+    </script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="wrap">
+            <h1 class="left"><a href="/">Jose Erlino Lontok</a></h1>
+            <div id="nav" class="right">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div><!-- // end #nav -->
+        </div><!-- // end .wrap -->
+    </div><!-- // end #header -->
+    
+    <div id="featured-spot">
+        <div class="wrap">
+            <h1>Front-end Web Developer from Cavite, Philippines.</h1>
+            <h1>Loves HTML, CSS, JS, and everything in between.</h1>            
+        </div>
+    </div><!-- // end #featured-spot -->
+    
+    <div id="main" class="wrap">
+        <div class="pad"> 
+
+            <div class="content">
   <div id="post">
-    <h1></h1>
+    <h1 class="title-border">Test Post</h1>
+    <span class="date"></span>
     <p>This is a test post writen in markdown. To learn more about markdown check out the <a href="http://daringfireball.net/projects/markdown/">documentation</a> on <a href="http://daringfireball.net/">Daring Fireball</a>.</p>
 
   </div>
 </div>
 
-    </section>
-  </body>
-</html>
+            
+        </div><!-- // end .pad -->
+        
+        <div id="sidebar">
+            <div class="widget">
+                <ul>
+                    <li><a href="#">Github</a></li>
+                    <li><a href="#">Linkedin</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Tumblr</a></li>
+                    <li><a href="#">Linkedin</a></li>
+                    <li><a href="#">Goodreads</a></li>
+                    <li><a href="#">Last.fm</a></li>
+                    
+                </ul>
+            </div>
+        </div><!-- // end #sidebar -->
+            
+            
+    </div><!-- // end #main -->
+    
+    <div id="footer">
+        <div class="wrap">
+            <p>
+                Hosted by <a href="http://www.github.com">Github</a> | Built with <a href="#">Jekyll</a>
+            </p>
+        </div><!-- // end .wrap -->
+    </div><!-- // end #footer -->
+    
+    <?php wp_footer(); ?>        
+
+</body>
+</html>            

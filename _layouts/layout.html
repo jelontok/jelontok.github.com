@@ -1,17 +1,38 @@
 <!DOCTYPE HTML>
 
 <html>
-  <head>
+
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="author" content="Your Name" />
     <title>{{ page.title }}</title>
-  </head>
-  <body>
-    <header>
-      <h1><a href="/">{{ page.title }}</a></h1>
-    </header>
-    <section>
-      {{ content }}
-    </section>
-  </body>
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+    
+    <div id="container">
+        
+        <div id="sidebar">
+            <h1><a href="/">JELONTOK.COM</a></h1>
+            <p>Jose Erlino Lontok is a Front-end Web Developer from Cavite, Philippines.</p>            
+            <ul>
+                <li><a href="#">Github</a></li>
+                <li><a href="#">Linkedin</a></li>
+                <li><a href="#">Tumblr</a></li>
+                <li><a href="#">Last.fm</a></li>
+                <li><a href="#">Goodreads</a></li>
+            </ul>
+            <p>Hosted by <a href="#">Github</a> | Built with <a href="#">Jekyll</a></p>
+        </div><!-- // end #sidebar -->
+        
+        <div id="main">
+            <div id="header">            
+            </div><!-- // end #header -->
+            {{ content }}
+        </div><!-- // end #main -->
+        
+    </div><!-- // end #containet -->
+</body>
+
 </html>
