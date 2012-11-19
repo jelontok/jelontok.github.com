@@ -175,6 +175,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,su
 .widget ul li .info {
     position: absolute;
     right: 0;
+    top: 10px;
     font-size: 0.5em
 }
 
