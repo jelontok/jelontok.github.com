@@ -16,6 +16,10 @@ html, body {
     color: #666;
 }
 
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+}
+
 /* Declaring HTML5 elements */
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{ display: block; }
 
@@ -37,7 +41,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,su
     color: #eee;
     line-height: 60px;
     /*font-family: 'BebasNeueRegular', sans-serif;*/    
-    font-family: 'Lobster', cursive;
+    /*font-family: 'Lobster', cursive;*/
     font-family: 'Cabin', sans-serif;
     font-weight: normal;
     font-size: 30px;
@@ -229,6 +233,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,su
 
 @media (max-width: 760px) {
     .wrap {width: 98%;}
+    .pad {padding: 30px}
     #header h1 {width: 40px; height: 40px; text-indent: -9999px; background-color: #fff; margin-top: 10px; margin-left: 5px; background-image: url(../images/h1-image.jpg);}
     #header #nav {float: none}
     #featured-spot {margin-bottom: 0; padding-bottom: 20px;}
@@ -237,6 +242,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,su
     .columns .column {float: none !important; width: 100% !important;}
     textarea#comment {width: 100%;}
     .entry input, .entry textarea {width: 100%;}
+    .info {position: relative !important; top: 0 !important; display: block;}
 }
 
 @media (max-width: 1250px) {
