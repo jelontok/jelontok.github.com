@@ -161,7 +161,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,su
     width: 220px;
     position: absolute;
     right: -235px;
-    top: 125px;
+    top: 134px;
 }
 
 .widget ul {
@@ -247,8 +247,4 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,su
 
 @media (max-width: 1250px) {
     #sidebar {display: none;}
-}
-
-.cycloneslider-caption{
-    background: url(http://www.jelontok.com/wp-content/plugins/cyclone-slider/templates/black/images/bg-caption.png) !important;
 }
