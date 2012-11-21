@@ -3,6 +3,7 @@ layout: post
 title: Free WordPress Theme&#58; DZDivs WP
 ---
 
+<p class="date">October 11, 2012</p>
 
 DZDivs WP is a WordPress port of the DZDivs HTML/CSS template.
 

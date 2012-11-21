@@ -157,6 +157,12 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,su
 
 #main .single-post-pager {padding: 50px 0;}
 
+
+.date {
+    font-size: 11px;
+    font-style: italic;
+}
+
 #sidebar {
     width: 220px;
     position: absolute;
