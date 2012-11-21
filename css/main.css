@@ -240,7 +240,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,su
 @media (max-width: 760px) {
     .wrap {width: 98%;}
     .pad {padding: 30px}
-    #header h1 {width: 40px; height: 40px; text-indent: -9999px; background-color: #fff; margin-top: 10px; margin-left: 5px; background-image: url(../images/h1-image.jpg);}
+    #header h1 {width: 40px; height: 40px; background-color: #fff; margin-top: 10px; margin-left: 5px; background-image: url(../images/h1-image.jpg);}
+    #header h1 a {width: 40px; height: 40px; text-indent: -9999px; display: block; }
     #header #nav {float: none}
     #featured-spot {margin-bottom: 0; padding-bottom: 20px;}
     #main {/*margin-top: 0;*/ border-radius: 0;}
