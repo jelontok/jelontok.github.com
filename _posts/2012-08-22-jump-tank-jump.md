@@ -11,5 +11,4 @@ Here's a screenshot of the last level of Jump Tank! Jump!
 
 Links:
 
-* [Demo Link](#)
-* [Demo Link](#)
+* [Demo Link](http://jelontok.com/demo/jumptankjump)
