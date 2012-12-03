@@ -27,4 +27,4 @@ If I'm finally going to dive in the framework bandwagon, the features I'm lookin
 * Nice base typography
 * **Small footprint**
 
-I'm still not a fan of HTML frameworks but I guess it's time for me to follow this cliche -> "Why reinvent the wheel?"
+I'm still not a fan of HTML frameworks but I guess it's time for me to follow this cliche, *"Why reinvent the wheel?"*
