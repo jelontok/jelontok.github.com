@@ -5,7 +5,7 @@ title: Thoughts about HTML frameworks
 
 <p class="date">December 3, 2012</p>
 
-I'm not a big fan of HTML frameworks. For me they are bloated and come with lot of stuff that your projects don't need.
+I'm not a big fan of HTML frameworks. For me they are bloated and come with lots of stuff that your projects don't need.
 
 Lately, we've getting a lot of inquiries regarding markup work with a required HTML framework to be used. We're lucky that our developers
 are very flexible and willing to adapt to HTML frameworks.
