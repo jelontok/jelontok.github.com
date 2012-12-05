@@ -15,6 +15,6 @@ not appear on the theme garden page.
 
 Kahon is located [here](http://www.tumblr.com/theme/36590).
 
-I was trying to update the theme's code but it looks like it's being updated.
+I was trying to update the theme's code but it looks like it's not being updated.
 
 The up to date theme code is in my [github account](https://github.com/jelontok/kahon).
