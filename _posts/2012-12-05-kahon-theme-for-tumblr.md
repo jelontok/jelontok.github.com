@@ -5,7 +5,7 @@ title: Kahon theme for Tumblr
 
 <p class="date">December 5, 2012</p>
 
-I got bored one night and I played around Tumblr's custom themes. I created a theme "Kahon" which means "box"
+I got bored one night and I played around Tumblr's custom themes. I created a theme named "Kahon" which means "box"
 in Tagalog. The theme is ideal for a Portfolio or Gallery type tumblog.
 
 I submitted it to the [Tumblr Theme Garden](http://www.tumblr.com/themes/) but it was not accepted.
