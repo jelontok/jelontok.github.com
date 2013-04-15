@@ -1,0 +1,80 @@
+---
+layout: default
+title: Jose Erlino Lontok | Front-end Web Developer | HTML, CSS, JS, jQuery, Wordpress | Cavite, Philippines
+---
+
+<div class="content">
+  
+    <h1 class="title-border">Free Projects</h1>
+    <div class="widget">
+        <ul>
+            <li>
+                <a href="http://www.myhedspace.com">Myhedspace.com</a>                
+                <span class="info">
+                    Free Open Source Web Design Project.
+                    Giving away free HTML/CSS templates since 2006!
+                    - <a href="http://github.com/jelontok/myhedspace">Browse on GitHub</a>
+                </span>
+            </li>
+        </ul>
+    </div>
+    
+    <h1 class="title-border">Recent Works</h1>
+    <div class="widget">
+        <ul>
+           
+            <li>
+                <a href="http://tellitinc.com/" target="_blank">TELLIT</a>
+                <span class="info">PSD to HTML / CSS conversion of initial site templates for
+                <a href="http://www.upthought.com" target="_blank" rel="nofollow">Upthought</a></span>
+            </li>
+            <li>
+                <a href="http://www.classicsavory.com/" target="_blank">Classic Savory</a>
+                <span class="info">PSD to HTML / CSS conversion and Wordpress theme development</span>
+            </li>
+            <li>
+                <a href="http://thevhscollaborative.org/" target="_blank">The VHS Collaborative</a>
+                <span class="info">PSD to HTML / CSS conversion of initial site templates for
+                <a href="http://www.upthought.com" target="_blank" rel="nofollow">Upthought</a></span>
+            </li>
+            <li>
+                <a href="http://www.hopeonline.org/" target="_blank">HOPE Online Learning Academy</a>
+                <span class="info">PSD to HTML / CSS conversion of initial site templates for
+                <a href="http://www.upthought.com" target="_blank" rel="nofollow">Upthought</a></span>
+            </li>            
+
+            <li>
+                <a href="http://air21.com.ph/blog" target="_blank">Air21 Blog</a>
+                <span class="info">PSD to HTML / CSS conversion and Wordpress theme development for
+                <a href="http://http://ubemedia.com/" target="_blank" rel="nofollow">Ube Media</a></span>
+            </li>
+            <li>
+                <a href="http://wwww.advertisingforhumanity.com/" target="_blank">Advertising for Humanity</a>
+                <span class="info">PSD to HTML / CSS conversion of initial site templates for
+                <a href="http://www.upthought.com" target="_blank" rel="nofollow">Upthought</a></span>
+            </li>
+            <li>
+                <a href="http://www.psdtohtmlcss.com/" target="_blank">PSD to HTML/CSS.com</a>
+                <span class="info">PSD to HTML / CSS conversion of initial site templates for
+                <a href="http://dabvine.com/" target="_blank" rel="nofollow">Dabvine</a></span>
+            </li>            
+            <li>
+                <a href="http://public.bracketeers.com/booth.php" target="_blank">Bracketeers</a>
+                <span class="info">PSD to HTML / CSS conversion of initial site templates for
+                <a href="http://www.upthought.com" target="_blank" rel="nofollow">Upthought</a></span>
+            </li>
+        </ul>
+    </div>
+
+    <h1 class="title-border">Latest from the blog</h1>
+    <div class="widget">
+        <ul>
+            {% for post in site.posts %}
+            <li>
+                <a href="{{ post.url }}">{{ post.title }}</a> <span class="info">{{ post.date | date: "%B %e, %Y" }}</span>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+  
+</div><!-- // end .content -->
