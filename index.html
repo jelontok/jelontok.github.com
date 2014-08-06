@@ -37,12 +37,7 @@
         h1, h2 {
             color: #1693a5;
             font-family: 'Roboto Slab', serif;
-        }
-        
-        .bg-1 {background-color: #c7ede8;}
-        .bg-2 {background-color: #a0ded6}
-        .bg-3 {background-color: #7ececa}
-        .bg-4 {background-color: #45b5c4}
+        }        
         
         #about {
             font-size: 2em;
@@ -65,7 +60,7 @@
         }
         
         .content {
-            padding: 60px;
+            padding: 50px 60px;
         }
         
         a {
@@ -84,6 +79,7 @@
             background-color: #45b5c4;
             float: left;
             margin: 0 10px 10px 0;
+            min-height: 100px;            
             color: #fff;
             padding: 2%;
             line-height: 22px;
@@ -97,7 +93,7 @@
             display: inline-block;
             font-family: 'Roboto Slab', serif;
             padding-bottom: 2px;
-            margin-bottom: 2px;
+            margin-bottom: 10px;
             text-decoration: none;
             border-bottom: 1px #fff solid;
             width: auto;
@@ -106,7 +102,7 @@
         
         .grid-list li .info {
             display: block;
-        }
+        }        
         
         @media (max-width: 977px) {
             #about {font-size: 1em}
@@ -116,6 +112,7 @@
                 padding-top: 20px;
                 padding-left: 20px;
                 padding-bottom: 20px;
+                min-height: inherit;
             }
         }
     </style>
@@ -201,13 +198,15 @@
                     <a href="http://www.upthought.com" target="_blank" rel="nofollow">Upthought</a>.</span>
                 </li>
             </ul>
-            <p style="text-align:center"  data-scroll-reveal="enter left, ease-in 90px after 2s"><a href="#about">Back to top <i class="fa fa-level-up"></i></a></p>
+            <p style="text-align:center; clear:both;" data-scroll-reveal="enter left, ease-in 90px after 1s"><a href="#about">Back to top <i class="fa fa-level-up"></i></a></p>
         </div>
     </div><!-- // #end #portfolio -->
     
     <script type="text/javascript">        
         $(document).ready(function(){
-            window.scrollReveal = new scrollReveal({reset: true,});
+            window.scrollReveal = new scrollReveal({
+                //reset: true
+            });
             
             // http://css-tricks.com/snippets/jquery/smooth-scrolling/
             $('a[href*=#]:not([href=#])').click(function() {
