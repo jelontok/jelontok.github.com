@@ -3,32 +3,232 @@
 <html>
 <head>
     <title>Jose Erlino M. Lontok | Front-end Web Developer</title>
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" />
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">    
     <style type="text/css">
-        body {margin:0;padding:0;}
-        #info {position:absolute; bottom:40px;text-align: center;width:100%;background-color:#eee;padding:20px 0;}
-        h1 {font-family: 'Lato', sans-serif;font-weight:normal;margin:0;}
-        p, ul {font-family: 'Open Sans', sans-serif;margin:0;}
-        ul {margin:0;padding:0;list-style:none;}
-        ul li {display:inline;}
-        ul li a {color: #333;padding: 0 5px;}
+        /* colors: http://www.colourlovers.com/palette/617935/Dutch_Seas */
+        html, body {
+            width: 100%;
+            height: 100%;
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+        }
+        
+        #top {
+            position: fixed;
+            background-color: #1693a5;
+            min-height: 30px;
+            line-height: 30px;
+            width: 100%;
+            top: 0;
+            left: 0;
+            text-align: center;
+            z-index: 100;
+        }
+        
+        #top a {
+            text-decoration: none;
+            margin-right: 10px;
+        }        
+        
+        h1, h2 {
+            color: #1693a5;
+            font-family: 'Roboto Slab', serif;
+        }
+        
+        .bg-1 {background-color: #c7ede8;}
+        .bg-2 {background-color: #a0ded6}
+        .bg-3 {background-color: #7ececa}
+        .bg-4 {background-color: #45b5c4}
+        
+        #about {
+            font-size: 2em;            
+        }
+        
+        #contact {
+            text-align: center;
+        }
+        
+        #contact h2 {
+            font-size: 3em;
+        }
+        
+        #contact span {
+            margin-right: 20px;
+        }
+                
+        .full-row {
+            width: 100%;
+            min-height: 100%;
+            overflow: auto;
+        }
+        
+        .content {
+            padding: 60px;
+        }
+        
+        a {
+            color: #fff;
+        }
+        
+        .grid-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            min-height: 100%;
+        }
+        
+        .grid-list li {
+            width: 28%;
+            background-color: #45b5c4;
+            float: left;
+            margin: 0 10px 10px 0;
+            color: #fff;
+            padding: 2%;
+            line-height: 22px;
+            font-size: 13px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 20px;
+        }
+        
+        .grid-list li .project-name {
+            display: inline-block;
+            font-family: 'Roboto Slab', serif;
+            padding-bottom: 2px;
+            margin-bottom: 2px;
+            text-decoration: none;
+            border-bottom: 1px #fff solid;
+            width: auto;
+            font-size: 14px;
+        }
+        
+        .grid-list li .info {
+            display: block;
+        }
+        
+        @media (max-width: 977px) {
+            #about {font-size: 1em}
+            .grid-list li {
+                width: 100%;
+                float: none;
+                padding-top: 20px;
+                padding-left: 20px;
+                padding-bottom: 20px;
+            }
+        }
     </style>
+    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="http://scrollrevealjs.org/js/scrollReveal.min.js"></script>
 </head>
 
 <body>
 
-    <div id="info">
-        <h1>Jose Erlino M. Lontok | Front-end Web Developer</h1>
-        <ul>
-            <li><a href="https://github.com/jelontok">GitHub</a></li>
-            <li><a href="http://www.linkedin.com/in/jelontok">LinkedIn</a></li>
-            <li><a href="http://www.goodreads.com/user/show/4509112-jose-erlino">Goodreads</a></li>
-            <li><a href="http://last.fm/user/jelontok">Last.fm</a></li>
-            <li><a href="http://jelontok.tumblr.com">Tumblr</a></li>                    
-        </ul>
-    </div>
+    <div id="top">
+        <a href="#about">About</a>        
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </div><!-- // end #top -->
+    
+    <div id="about" class="full-row bg-1">
+        <div class="content">
+            <h1 data-scroll-reveal="enter left, ease-in 90px after 0.5s">Hello, I'm Jose Erlino M. Lontok.</h1>
+            <p data-scroll-reveal="enter left, ease-in 90px after 1s">I'm a Front End Web Developer based in Cavite, Philippines.</p>
+            <p data-scroll-reveal="enter left, ease-in 90px after 1.5s">I love HTML, CSS, and everything in between!</p>
+        </div>
+    </div><!-- // end #home -->
+    
+    <div id="portfolio" class="full-row bg-2">
+        <div class="content">
+            <h2 data-scroll-reveal="enter left, ease-in 90px after 0.5s">Portfolio</h2>
+            <p data-scroll-reveal="enter left, ease-in 90px after 1s">I've already worked on HUNDREDS of websites but most of them are under NDA. Here are some my projects that I'm actually allowed to share.</p>
+            <ul class="grid-list"  data-scroll-reveal="enter left, ease-in 90px after 1.5s">
 
+                <li>
+                    <a href="http://www.thefixburgerbar.com/" target="_blank" class="project-name">The Fix Burger Bar</a>
+                    <span class="info">PSD to HTML / CSS conversion of initial site templates for
+                    <a href="http://www.upthought.com" target="_blank" rel="nofollow">Upthought</a></span>
+                </li>
+
+                <li>
+                    <a href="http://www.denisfaye.com/" target="_blank" class="project-name">Denis Faye</a>
+                    <span class="info">PSD to HTML / CSS conversion and Wordpress theme development for
+                    <a href="http://smmcast.com/" target="_blank" rel="nofollow">SMMcast</a></span>
+                </li>
+                <li>
+                    <a href="http://tellitinc.com/" target="_blank" class="project-name">TELLIT</a>
+                    <span class="info">PSD to HTML / CSS conversion of initial site templates for
+                    <a href="http://www.upthought.com" target="_blank" rel="nofollow">Upthought</a></span>
+                </li>
+                <li>
+                    <a href="http://thevhscollaborative.org/" target="_blank" class="project-name">The VHS Collaborative</a>
+                    <span class="info">PSD to HTML / CSS conversion of initial site templates for
+                    <a href="http://www.upthought.com" target="_blank" rel="nofollow">Upthought</a></span>
+                </li>
+                <li>
+                    <a href="http://www.hopeonline.org/" target="_blank" class="project-name">HOPE Online Learning Academy</a>
+                    <span class="info">PSD to HTML / CSS conversion of initial site templates for
+                    <a href="http://www.upthought.com" target="_blank" rel="nofollow">Upthought</a></span>
+                </li>            
+                
+                <li>
+                    <a href="http://air21.com.ph/blog" target="_blank" class="project-name">Air21 Blog</a>
+                    <span class="info">PSD to HTML / CSS conversion and Wordpress theme development for
+                    <a href="http://http://ubemedia.com/" target="_blank" rel="nofollow">Ube Media</a></span>
+                </li>
+                <li>
+                    <a href="http://wwww.advertisingforhumanity.com/" target="_blank" class="project-name">Advertising for Humanity</a>
+                    <span class="info">PSD to HTML / CSS conversion of initial site templates for
+                    <a href="http://www.upthought.com" target="_blank" rel="nofollow">Upthought</a></span>
+                </li>
+                <li>
+                    <a href="http://www.psdtohtmlcss.com/" target="_blank" class="project-name">PSD to HTML/CSS.com</a>
+                    <span class="info">PSD to HTML / CSS conversion of initial site templates for
+                    <a href="http://dabvine.com/" target="_blank" rel="nofollow">Dabvine</a></span>
+                </li>            
+                <li>
+                    <a href="http://public.bracketeers.com/booth.php" target="_blank" class="project-name">Bracketeers</a>
+                    <span class="info">PSD to HTML / CSS conversion of initial site templates for
+                    <a href="http://www.upthought.com" target="_blank" rel="nofollow">Upthought</a></span>
+                </li>
+            </ul>
+        </div>
+    </div><!-- // #end #portfolio-->
+    
+    <div id="contact" class="full-row bg-4">
+        <div class="content">
+            <h2 data-scroll-reveal="enter left, ease-in 90px after 0.5s">Contact</h2>
+            <span data-scroll-reveal="enter right, ease-in 90px after 1s"><a href="http://github.com/jelontok"><i class="fa fa-github fa-5x"></i></a></span>
+            <span data-scroll-reveal="enter right, ease-in 90px after 1.5s"><a href="http://www.linkedin.com/in/jelontok"><i class="fa fa-linkedin fa-5x"></i></a></span>            
+            <span data-scroll-reveal="enter right, ease-in 90px after 2s"><a href="http://twitter.com/jelontok"><i class="fa fa-twitter fa-5x"></i></a></span>
+            <span data-scroll-reveal="enter right, ease-in 90px after 2.5s"><a href="mailto:jelontok@gmail.com"><i class="fa fa-envelope fa-5x"></i></a></span>
+        </div>
+    </div><!-- // end #contact -->
+
+    
+    <script type="text/javascript">        
+        $(document).ready(function(){
+            window.scrollReveal = new scrollReveal({reset: true,});
+            
+            // http://css-tricks.com/snippets/jquery/smooth-scrolling/
+            $('a[href*=#]:not([href=#])').click(function() {
+              if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                  $('html,body').animate({
+                    scrollTop: target.offset().top
+                  }, 1000);
+                  return false;
+                }
+              }
+            });            
+            
+        });
+    </script>    
+    
 </body>
 </html>
