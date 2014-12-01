@@ -19,7 +19,7 @@
         
         #top {
             position: fixed;
-            background-color: #1693a5;
+            background-color: #000;
             min-height: 30px;
             line-height: 30px;
             width: 100%;
@@ -35,13 +35,13 @@
         }        
         
         h1, h2 {
-            color: #1693a5;
+            color: #000;
             font-family: 'Roboto Slab', serif;
         }        
         
         #about {
             font-size: 2em;
-            background-color: #c7ede8;
+            background-color: #ccc;
             text-align: center;
         }        
         
@@ -50,11 +50,11 @@
         }
         
         #about a:hover {
-            color: #1693a5;
+            color: #000;
         }
         
         #portfolio {
-            background-color: #a0ded6            
+            background-color: #eee            
         }
 
         .full-row {
@@ -80,7 +80,7 @@
         
         .grid-list li {
             width: 28%;
-            background-color: #45b5c4;
+            background-color: #333;
             float: left;
             margin: 0 10px 10px 0;
             min-height: 110px;            
@@ -106,7 +106,16 @@
         
         .grid-list li .info {
             display: block;
-        }        
+        }
+        
+        #back-to-top {
+            text-align:center;
+            clear:both;            
+        }
+        
+        #back-to-top a {
+            color: #000;
+        }
         
         @media (max-width: 977px) {
             #about {font-size: 1em}
@@ -204,7 +213,7 @@
                     <a href="http://www.upthought.com" target="_blank" rel="nofollow">Upthought</a>.</span>
                 </li>
             </ul>
-            <p style="text-align:center; clear:both;" data-sr="enter left, ease-in 90px after 1s"><a href="#about">Back to top <i class="fa fa-level-up"></i></a></p>
+            <p id="back-to-top" data-sr="enter left, ease-in 90px after 1s"><a href="#about">Back to top <i class="fa fa-level-up"></i></a></p>
         </div>
     </div><!-- // #end #portfolio -->
     
