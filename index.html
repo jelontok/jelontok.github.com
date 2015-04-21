@@ -52,7 +52,7 @@
             font-size: 1em;
             background-color: #ccc;
             text-align: center;
-            background: url(images/bg.jpg) top no-repeat;
+            background: url(images/bg2.jpg) bottom no-repeat;
             background-size: cover;
             color: #eee;
             text-shadow: 2px 2px 2px #000;
@@ -103,7 +103,13 @@
             font-size: 13px;
             border-top-left-radius: 20px;
             border-top-right-radius: 10px;
-            border-bottom-right-radius: 20px;            
+            border-bottom-right-radius: 20px;
+            transition: all .5s;
+        }
+        
+        .grid-list li:hover {
+            background-color: #666;
+            border-radius: 0;
         }
         
         .grid-list li .project-name {
@@ -132,7 +138,7 @@
         
         @media (min-width: 860px) {
             #about {font-size: 1.5em}
-            #about h1 {padding-top: 5%}
+            #about h1 {padding-top: 1%}
             #about .fa {font-size: 4em}
             .grid-list li {
                 width: 28%;
@@ -247,7 +253,6 @@
               }
             });                        
         });
-    </script>    
-    
+    </script>       
 </body>
 </html>
