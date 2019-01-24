@@ -8,11 +8,7 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' rel='stylesheet' type='text/css'  />
     <link href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" rel='stylesheet' type='text/css'   />
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'  />
-    <link href="assets/css/index.css" rel='stylesheet' type='text/css'  />
-    
-    
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="assets/js/particles.min.js"></script>
+    <link href="assets/css/index.css" rel='stylesheet' type='text/css'  />    
 </head>
 
 <body>
@@ -28,9 +24,7 @@
     
     <div id="about" class="full-row">
 
-        <div id="particles-js"></div>
-        
-        <script type="text/javascript" src="assets/js/init_particles.js"></script>        
+        <div id="particles-js"></div>            
         
         <div class="content">
             <h1>Hello, I'm Jose Erlino M. Lontok.</h1>
@@ -107,41 +101,10 @@
         </div>
     </div><!-- // #end #portfolio -->
     
-    <script type="text/javascript">        
-        $(document).ready(function(){
-            // http://css-tricks.com/snippets/jquery/smooth-scrolling/
-            $('a[href*=#]:not([href=#])').click(function() {
-              if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                if (target.length) {
-                  $('html,body').animate({
-                    scrollTop: target.offset().top
-                  }, 1000);
-                  return false;
-                }
-              }
-            });
-            
-            $('#top button').click(function(){
-                if ($('.fa', this).hasClass('fa-bars')) {
-                    $('#top #nav').fadeIn();
-                    $('.fa', this).removeClass('fa-bars').addClass('fa-times');
-                    $('#top button').css({color: '#fff'})
-                } else {
-                    $('#top #nav').fadeOut();
-                    $('.fa', this).removeClass('fa-times').addClass('fa-bars');                    
-                }
-            });
-            
-            $(window).scroll(function() {
-               if($(window).scrollTop() > $(window).height() && $('#top button .fa').hasClass('fa-bars')) {
-                   $('#top button').css({color: '#333'})
-               } else {
-                   $('#top button').css({color: '#fff'})
-               }
-            });            
-        });
-    </script>       
+    <script type="text/javascript" src="assets/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="assets/js/particles.min.js"></script>
+    <script type="text/javascript" src="assets/js/init_particles.js"></script>        
+    <script src="assets/js/scripts.js"></script>
+     
 </body>
 </html>
